@@ -1,13 +1,18 @@
 # Assignment_12_Prime_Numbers
+#Print the prime numbers which are between 1 to entered limit number (nr).
 
-n = int(input("Enter a number to see whether it is a prime number : "))
-counter = 0
+nr = int(input("Enter a range of numbers : "))
+prime_list = []
 
-for i in range (1, n+1):
-    if n % i == 0:
-        counter += 1
 
-if (sayac < 3) and (n != 0) and (n != 1):
-    print(f"{n} is a prime number")
-else:
-    print(f"{n} is not a prime number")  
+for j in range(1, nr+1):
+    counter = 0
+
+    for i in range (1, j+1):
+        if j % i == 0:
+            counter += 1
+
+    if (counter < 3) and (n != 0) and (n != 1):
+        prime_list.append(j)
+
+print(prime_list)
