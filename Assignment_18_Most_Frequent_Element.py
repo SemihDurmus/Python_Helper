@@ -16,3 +16,8 @@ def most_freq(given_list):
             result = i    
             
     return result
+
+
+# Shorter way
+# def my_fact(n):
+#    return 1 if n==0 else n*my_fact(n-1)
